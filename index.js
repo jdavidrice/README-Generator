@@ -16,28 +16,38 @@ const promptUser = () => {
     },
     {
       type: 'input',
-      name: 'location',
-      message: 'Where are you from?',
+      name: 'repo',
+      message: 'What is the repo name?',
     },
     {
       type: 'input',
-      name: 'hobby',
-      message: 'What is your favorite hobby?',
+      name: 'deploy',
+      message: 'What is the deployed site URL?',
     },
     {
       type: 'input',
-      name: 'food',
-      message: 'What is your favorite food?',
+      name: 'screenshot',
+      message: 'What is the screenshot link?',
     },
     {
       type: 'input',
-      name: 'github',
-      message: 'Enter your GitHub Username',
+      name: 'install',
+      message: 'What are the installation instructions?',
     },
     {
       type: 'input',
-      name: 'linkedin',
-      message: 'Enter your LinkedIn URL.',
+      name: 'usage',
+      message: 'How do you use the app?',
+    },
+    {
+      type: 'input',
+      name: 'credits',
+      message: 'Who gets credit for this app?',
+    },
+    {
+      type: 'input',
+      name: 'license',
+      message: 'What is the license?',
     },
   ]);
 };
@@ -45,12 +55,62 @@ const promptUser = () => {
 // TODO: Create a function to write README file
 
 const generateMD = (answers) =>
-  `${answers.name}
-${answers.location}
-${answers.github}
-${answers.linkedin}
-${answers.hobby}
-${answers.food}`;
+`## ${answers.repo}
+
+## Description 
+
+This ${answers.repo} is a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). 
+
+[Link to published website](${answers.deploy})
+
+## Table of Contents
+
+* [Description](#Description)
+* [Table of Contents](#Table-of-Contents)
+* [Photo](#Photo)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Credits](#Credits)
+* [License](#License)
+* [Contributing](#Contributing)
+
+## Photo
+
+![Screenshot of completed website.](${answers.screenshot})
+
+* [Return to Top](#${answers.repo})
+
+## Installation
+
+${answers.install}
+
+* [Return to Top](#${answers.repo})
+
+## Usage 
+
+${answers.usage}
+
+* [Return to Top](#${answers.repo})
+
+## Credits
+
+${answers.credits}
+
+* [Return to Top](#${answers.repo})
+
+## License
+
+${answers.license}
+
+* [Return to Top](#${answers.repo})
+
+## Contributing
+
+  ${answers.name}
+
+* [Return to Top](#${answers.repo})
+`;
+
 
 // TODO: Create a function to initialize app
 const init = async () => {
