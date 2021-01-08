@@ -1,10 +1,10 @@
-## README-Generator
+## fdsa
 
 ## Description 
 
-This README-Generator is a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). 
+This fdsa is a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). 
 
-[Link to published website](https://jdavidrice.github.io/Coding_Quiz/)
+[Link to published website](https://)
 
 ## Table of Contents
 
@@ -19,36 +19,36 @@ This README-Generator is a command-line application that dynamically generates a
 
 ## Photo
 
-![Screenshot of completed website.](github.com/jdavidrice/Coding_Quiz#Photo)
+![Screenshot of completed website.](Assets\Images\query_cuisine_pic_1.png)
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Installation
 
-Put his app on your computer and run it every day for clean, shiny teeth and fur. 
+kl
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Usage 
 
-You fill it with gravy and then cook it until it bursts. 
+jkl;
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Credits
 
-Everyone.
+jkl;
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## License
 
 MIT
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Contributing
 
   Jeremy Rice
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)

@@ -27,7 +27,7 @@ const promptUser = () => {
     {
       type: 'input',
       name: 'screenshot',
-      message: 'What is the screenshot link?',
+      message: 'What is the relative path to the screenshot file?',
     },
     {
       type: 'input',
