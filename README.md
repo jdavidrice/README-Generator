@@ -41,7 +41,7 @@ There is nothing to install to access the information on this website.
 
 ## License
 
-MIT License
+![MIT Badge](https://img.shields.io/github/license/jdavidrice/README-Generator)
 
 Copyright (c) 2021 Jeremy Rice
 
