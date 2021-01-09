@@ -1,53 +1,62 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
-
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// TODO: Create an array of questions for user input
-
+// Array of questions for user input
 const promptUser = () => {
   return inquirer.prompt([
     {
       type: 'input',
-      name: 'name',
-      message: 'What is your name?',
+      name: 'title',
+      message: 'What is the name of this app?',
     },
     {
       type: 'input',
-      name: 'repo',
-      message: 'What is the repo name?',
+      name: 'description',
+      message: 'What is a description of this app?',
     },
     {
       type: 'input',
       name: 'deploy',
-      message: 'What is the deployed site URL?',
+      message: 'What is the URL of the deployed app?',
     },
     {
       type: 'input',
-      name: 'screenshot',
-      message: 'What is the relative path to the screenshot file?',
-    },
-    {
-      type: 'input',
-      name: 'install',
+      name: 'installation',
       message: 'What are the installation instructions?',
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'How do you use the app?',
+      message: 'How should this app be used?',
     },
     {
-      type: 'input',
-      name: 'credits',
-      message: 'Who gets credit for this app?',
-    },
-    {
-      type: 'input',
+      type: 'list',
       name: 'license',
-      message: 'What is the license?',
+      message: 'What license should be applied?',
+      choices: ['MIT License', 'GNU General Public License v3.0', 'Apache License 2.0', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal'],
+    },
+    {
+      type: 'input',
+      name: 'contributing',
+      message: 'Who has contributed to this project?',
+    },
+    {
+      type: 'input',
+      name: 'tests',
+      message: 'What are the tests that can be performed on this app?',
+    },
+    {
+      type: 'input',
+      name: 'username',
+      message: 'What is your GitHub username?',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email address?',
     },
   ]);
 };
@@ -55,11 +64,11 @@ const promptUser = () => {
 // TODO: Create a function to write README file
 
 const generateMD = (answers) =>
-`## ${answers.repo}
+`## ${answers.title}
 
 ## Description 
 
-This ${answers.repo} is a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). 
+${answers.description} 
 
 [Link to published website](${answers.deploy})
 
@@ -67,48 +76,52 @@ This ${answers.repo} is a command-line application that dynamically generates a 
 
 * [Description](#Description)
 * [Table of Contents](#Table-of-Contents)
-* [Photo](#Photo)
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Credits](#Credits)
 * [License](#License)
 * [Contributing](#Contributing)
-
-## Photo
-
-![Screenshot of completed website.](${answers.screenshot})
-
-* [Return to Top](#${answers.repo})
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
-${answers.install}
+${answers.installation}
 
-* [Return to Top](#${answers.repo})
+* [Return to Top](#${answers.title})
 
 ## Usage 
 
 ${answers.usage}
 
-* [Return to Top](#${answers.repo})
+* [Return to Top](#${answers.title})
 
-## Credits
+## Questions
 
-${answers.credits}
+Please email me at the email address listed below with any questions about this app. 
 
-* [Return to Top](#${answers.repo})
+[${answers.email}](mailto:${answers.email})
+
+[Repository Owner GitHub Profile](https://github.com/${answers.username})
+
+* [Return to Top](#${answers.title})
 
 ## License
 
 ${answers.license}
 
-* [Return to Top](#${answers.repo})
+* [Return to Top](#${answers.title})
 
 ## Contributing
 
-  ${answers.name}
+  ${answers.contributing}
 
-* [Return to Top](#${answers.repo})
+* [Return to Top](#${answers.title})
+
+## Tests
+
+${answers.tests}
+
+* [Return to Top](#${answers.title})
 `;
 
 

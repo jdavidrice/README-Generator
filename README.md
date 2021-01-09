@@ -1,54 +1,59 @@
-## fdsa
+## README-Generator
 
 ## Description 
 
-This fdsa is a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer). 
+jkl; 
 
-[Link to published website](https://)
+// [Link to published website](jdavidrice.github.io/README-Generator/)
+[Link to published website](https://jdavidrice.github.io/README-Generator/)
 
 ## Table of Contents
 
 * [Description](#Description)
 * [Table of Contents](#Table-of-Contents)
-* [Photo](#Photo)
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Credits](#Credits)
 * [License](#License)
 * [Contributing](#Contributing)
-
-## Photo
-
-![Screenshot of completed website.](Assets\Images\query_cuisine_pic_1.png)
-
-* [Return to Top](#fdsa)
+* [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
-kl
+jkl;
 
-* [Return to Top](#fdsa)
+* [Return to Top](#README-Generator)
 
 ## Usage 
 
 jkl;
 
-* [Return to Top](#fdsa)
+* [Return to Top](#README-Generator)
 
-## Credits
+## Questions
 
-jkl;
+Please email me at the email address listed below with any questions about this app. 
 
-* [Return to Top](#fdsa)
+[jdavidrice@gmail.com](mailto:jdavidrice@gmail.com)
+
+[Repository Owner GitHub Profile](https://github.com/jdavidrice)
+
+* [Return to Top](#README-Generator)
 
 ## License
 
-MIT
+Creative Commons Zero v1.0 Universal
 
-* [Return to Top](#fdsa)
+* [Return to Top](#README-Generator)
 
 ## Contributing
 
   Jeremy Rice
 
-* [Return to Top](#fdsa)
+* [Return to Top](#README-Generator)
+
+## Tests
+
+jkl;
+
+* [Return to Top](#README-Generator)
