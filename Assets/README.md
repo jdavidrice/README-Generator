@@ -1,11 +1,13 @@
-## README-Generator
+
+# README-Generator
+
+[![GitHub license](https://img.shields.io/github/license/jdavidrice/README-Generator)](https://github.com/jdavidrice/README-Generator/blob/master/LICENSE)
 
 ## Description 
 
-jkl; 
+This is a README generator app. 
 
-// [Link to published website](jdavidrice.github.io/README-Generator/)
-[Link to published website](https://jdavidrice.github.io/README-Generator/)
+[Link to published website](https://jdavidrice.github.io/README-Generator)
 
 ## Table of Contents
 
@@ -20,13 +22,13 @@ jkl;
 
 ## Installation
 
-jkl;
+Install node.js, npm, and Inquirer package
 
 * [Return to Top](#README-Generator)
 
 ## Usage 
 
-jkl;
+After installing the dependencies, use "node index.js" to run the app. Answer the questions and a README will be generated automatically.
 
 * [Return to Top](#README-Generator)
 
@@ -42,7 +44,7 @@ Please email me at the email address listed below with any questions about this 
 
 ## License
 
-Creative Commons Zero v1.0 Universal
+MIT License
 
 * [Return to Top](#README-Generator)
 
@@ -54,6 +56,6 @@ Creative Commons Zero v1.0 Universal
 
 ## Tests
 
-jkl;
+No tests
 
 * [Return to Top](#README-Generator)

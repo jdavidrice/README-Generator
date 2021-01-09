@@ -63,8 +63,10 @@ const promptUser = () => {
 
 // TODO: Create a function to write README file
 
-const generateMD = (answers) =>
-`## ${answers.title}
+const generateMD = (answers) => `
+# ${answers.title}
+
+[![GitHub license](https://img.shields.io/github/license/${answers.username}/${answers.title})](https://github.com/${answers.username}/${answers.title}/blob/master/LICENSE)
 
 ## Description 
 
