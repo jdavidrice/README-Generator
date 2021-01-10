@@ -36,7 +36,7 @@ const promptUser = () => {
       type: 'list',
       name: 'license',
       message: 'What license should be applied?',
-      choices: ['MIT License', 'GNU General Public License v3.0', 'Apache License 2.0', 'BSD 2-Clause "Simplified" License', 'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal'],
+      choices: ['null', 'MIT', 'GNU-GPL-v3.0', 'GNU-AGPLv3', 'BSD-2-Clause', 'BSD-3-Clause'],
     },
     {
       type: 'input',
@@ -61,12 +61,42 @@ const promptUser = () => {
   ]);
 };
 
-// TODO: Create a function to write README file
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+function renderLicenseBadge(license) {
+  if (license === null) return "";
+  else {
+    return `[![GitHub license](https://img.shields.io/badge/license-${license}-brightgreen)](https://img.shields.io/badge/license-${license}-brightgreen)`;
+  }
+}
 
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  switch (license) {
+    case 'MIT':
+      return 'https://choosealicense.com/licenses/mit/';
+      break;
+    case 'GNU-GPL-v3.0':
+      return 'https://choosealicense.com/licenses/gpl-3.0';
+      break;
+    case 'GNU-AGPLv3':
+      return 'https://choosealicense.com/licenses/agpl-3.0/';
+      break;
+    case 'BSD-2-Clause':
+      return 'https://choosealicense.com/licenses/bsd-2-clause';
+      break;
+    case 'BSD-3-Clause':
+      return 'https://choosealicense.com/licenses/bsd-3-clause';
+      break;
+  }
+}
+
+// TODO: Create a function to generate markdown for README
 const generateMD = (answers) => `
 # ${answers.title}
 
-[![GitHub license](https://img.shields.io/github/license/${answers.username}/${answers.title})](https://github.com/${answers.username}/${answers.title}/blob/master/LICENSE)
+${renderLicenseBadge(answers.license)}
 
 ## Description 
 
@@ -77,13 +107,12 @@ ${answers.description}
 ## Table of Contents
 
 * [Description](#Description)
-* [Table of Contents](#Table-of-Contents)
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Questions](#Questions)
 * [License](#License)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
-* [Questions](#Questions)
 
 ## Installation
 
@@ -103,13 +132,15 @@ Please email me at the email address listed below with any questions about this 
 
 [${answers.email}](mailto:${answers.email})
 
+Or, take a look at some of my other projects.
+
 [Repository Owner GitHub Profile](https://github.com/${answers.username})
 
 * [Return to Top](#${answers.title})
 
 ## License
 
-${answers.license}
+${renderLicenseSection(answers.license)}
 
 * [Return to Top](#${answers.title})
 
@@ -127,9 +158,9 @@ ${answers.tests}
 `;
 
 
-// TODO: Create a function to initialize app
+// TODO: Create a function to write README file
 const init = async () => {
-  console.log('hi');
+  console.log('Hello. Answer the following quetions to generate a README file.');
   try {
     const answers = await promptUser();
 
@@ -142,6 +173,20 @@ const init = async () => {
     console.log(err);
   }
 };
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license === null) {
+    return "";
+  } else {
+    return `This software has been created under the [${license}](${renderLicenseLink(license)}) license.`;
+  }
+}
+
+
+module.exports = generateMD;
+
 
 // Function call to initialize app
 init();
