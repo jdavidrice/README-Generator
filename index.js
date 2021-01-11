@@ -121,6 +121,8 @@ function renderLicenseSection(license) {
   ## License
     
   This software has been created under the [${license}](${renderLicenseLink(license)}) license.
+
+  * [Return to Top](#Description)
   `;
   }
 }
@@ -159,13 +161,13 @@ ${renderTocLicenseEntry(answers.license)}
 
 ${answers.installation}
 
-* [Return to Top](#${answers.title})
+* [Return to Top](#Description)
 
 ## Usage 
 
 ${answers.usage}
 
-* [Return to Top](#${answers.title})
+* [Return to Top](#Description)
 
 ## Questions
 
@@ -177,7 +179,7 @@ Follow this link to see some of my other projects.
 
 [GitHub Profile](https://github.com/${answers.username})
 
-* [Return to Top](#${answers.title})
+* [Return to Top](#Description)
 
 ##
 
@@ -187,13 +189,13 @@ ${renderLicenseSection(answers.license)}
 
   ${answers.contributing}
 
-* [Return to Top](#${answers.title})
+* [Return to Top](#Description)
 
 ## Tests
 
 ${answers.tests}
 
-* [Return to Top](#${answers.title})
+* [Return to Top](#Description)
 `;
 
 // Function to write README file
