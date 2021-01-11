@@ -25,7 +25,7 @@ To use this app, you need to install Node.js, NPM, and Inquirer.
 
 ## Usage 
 
-After installing the required dependencies, type "node index.js" into the console. Answer the questions, and the app will automatically generate a README file. 
+After installing the required dependencies, enter "node index.js" into the console. Answer the questions, and the app will automatically generate a README file. 
 
 * [Return to Top](#README-Generator)
 
