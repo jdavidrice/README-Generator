@@ -19,13 +19,22 @@ This README generator is a command-line Node.js application that dynamically gen
 
 ## Installation
 
-To use this app, you need to install Node.js, NPM, and Inquirer.
-
+1. Fork this repository and download it to your computer.
+2. Install [Node.js](https://nodejs.org/en/download/) for your operating system. 
+3. Install the Node Project Manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+4. Install the [Inquirer package](https://www.npmjs.com/package/inquirer) by using the following command:
+```
+npm i inquirer
+```
 * [Return to Top](#README-Generator)
 
 ## Usage 
 
-After installing the required dependencies, enter "node index.js" into the console. Answer the questions, and the app will automatically generate a README file. 
+1. Use the following command to start the process of automatically generating a README file:
+```
+node index.js
+```
+2. Answer the question prompts as completely as possible. When done, you will have README file that you can use for your project.  
 
 * [Return to Top](#README-Generator)
 
