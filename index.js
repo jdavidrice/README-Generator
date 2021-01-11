@@ -117,9 +117,7 @@ function renderLicenseSection(license) {
   if (license === null) {
     return "";
   } else {
-    return `## License
-    This software has been created under the [${license}](${renderLicenseLink(license)}) license.
-    `;
+    return `This software has been created under the [${license}](${renderLicenseLink(license)}) license.`;
   }
 }
 
@@ -169,7 +167,11 @@ Follow this link to see some of my other projects.
 
 * [Return to Top](#${answers.title})
 
+## License
+
 ${renderLicenseSection(answers.license)}
+
+* [Return to Top](#${answers.title})
 
 ## Contributing
 
