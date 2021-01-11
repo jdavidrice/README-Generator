@@ -1,78 +1,62 @@
-# README-Generator 
-[![GitHub license](https://img.shields.io/github/license/jdavidrice/README-Generator)](https://github.com/jdavidrice/README-Generator/blob/master/LICENSE)
+
+# fdsa
+
+
+
 ## Description 
 
-This README generator is a command-line Node.js application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
+fdsa 
 
-[Link to published website](https://jdavidrice.github.io/README-Generator/)
+[Link to published website](fdsa)
 
 ## Table of Contents
 
 * [Description](#Description)
-* [Table of Contents](#Table-of-Contents)
 * [Installation](#Installation)
 * [Usage](#Usage)
+* [Questions](#Questions)
 * [License](#License)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
-* [Questions](#Questions)
 
 ## Installation
 
-To use this app, you need to install Node.js, NPM, and Inquirer.
+fdsa
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Usage 
 
-After installing the required dependencies, enter "node index.js" into the console. Answer the questions, and the app will automatically generate a README file. 
+fdsa
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Questions
 
-Please contact me at the email address listed below with any questions about this app. 
+Please email me at the email address listed below with any questions about this app. 
 
-[jdavidrice@gmail.com](mailto:jdavidrice@gmail.com)
+[fdsa](mailto:fdsa)
 
-[Repository Owner GitHub Profile](https://github.com/jdavidrice)
+Follow this link to see some of my other projects.
 
-* [Return to Top](#README-Generator)
+[Repository Owner GitHub Profile](https://github.com/fdsa)
 
-## License
+* [Return to Top](#fdsa)
 
-MIT License
+##
 
-Copyright (c) 2021 Jeremy Rice
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Contributing
 
-  Jeremy Rice
+  fdsa
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)
 
 ## Tests
 
-No tests
+fdsa
 
-* [Return to Top](#README-Generator)
+* [Return to Top](#fdsa)

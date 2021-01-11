@@ -36,7 +36,7 @@ const promptUser = () => {
       type: 'list',
       name: 'license',
       message: 'What license should be applied to this project?',
-      choices: ['null', 'MIT', 'GNU GPL v3.0', 'GNU AGPL v3.0', 'BSD 2 Clause', 'BSD 3 Clause'],
+      choices: ['MIT', 'GNU GPL v3.0', 'GNU AGPL v3.0', 'BSD 2-Clause', 'BSD 3-Clause', 'no license'],
     },
     {
       type: 'input',
@@ -80,7 +80,7 @@ function renderLicenseBadge(license) {
     case 'BSD 3 Clause':
       return '[![GitHub license](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen)](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen)';
       break;
-    case 'null':
+    case 'no license':
       return "";
       break;
   }
@@ -105,7 +105,7 @@ function renderLicenseLink(license) {
     case 'BSD 3 Clause':
       return 'https://choosealicense.com/licenses/bsd-3-clause';
       break;
-    case 'null':
+    case 'no license':
       return "";
       break;
   }
@@ -114,10 +114,14 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license === null) {
+  if (license === 'no license') {
     return "";
   } else {
-    return `This software has been created under the [${license}](${renderLicenseLink(license)}) license.`;
+    return `
+  ## License
+    
+  This software has been created under the [${license}](${renderLicenseLink(license)}) license.
+  `;
   }
 }
 
@@ -167,7 +171,7 @@ Follow this link to see some of my other projects.
 
 * [Return to Top](#${answers.title})
 
-## License
+##
 
 ${renderLicenseSection(answers.license)}
 
