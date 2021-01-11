@@ -36,7 +36,7 @@ const promptUser = () => {
       type: 'list',
       name: 'license',
       message: 'What license should be applied to this project?',
-      choices: ['MIT', 'GNU GPL v3.0', 'GNU AGPL v3.0', 'BSD 2-Clause', 'BSD 3-Clause', 'no license'],
+      choices: ['MIT', 'GNU GPL v3.0', 'GNU AGPL v3.0', 'BSD 2-Clause', 'BSD 3-Clause', 'No license'],
     },
     {
       type: 'input',
@@ -61,7 +61,7 @@ const promptUser = () => {
   ]);
 };
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   switch (license) {
@@ -74,19 +74,19 @@ function renderLicenseBadge(license) {
     case 'GNU AGPL v3.0':
       return '[![GitHub license](https://img.shields.io/badge/license-GNU_AGPL_v3.0-brightgreen)](https://img.shields.io/badge/license-GNU_AGPL_v3.0-brightgreen)';
       break;
-    case 'BSD 2 Clause':
+    case 'BSD 2-Clause':
       return '[![GitHub license](https://img.shields.io/badge/license-BSD_2_Clause-brightgreen)](https://img.shields.io/badge/license-BSD_2_Clause-brightgreen)';
       break;
-    case 'BSD 3 Clause':
+    case 'BSD 3-Clause':
       return '[![GitHub license](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen)](https://img.shields.io/badge/license-BSD_3_Clause-brightgreen)';
       break;
-    case 'no license':
+    case 'No license':
       return "";
       break;
   }
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   switch (license) {
@@ -99,22 +99,22 @@ function renderLicenseLink(license) {
     case 'GNU AGPL v3.0':
       return 'https://choosealicense.com/licenses/agpl-3.0/';
       break;
-    case 'BSD 2 Clause':
+    case 'BSD 2-Clause':
       return 'https://choosealicense.com/licenses/bsd-2-clause';
       break;
-    case 'BSD 3 Clause':
+    case 'BSD 3-Clause':
       return 'https://choosealicense.com/licenses/bsd-3-clause';
       break;
-    case 'no license':
+    case 'No license':
       return "";
       break;
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license === 'no license') {
+  if (license === 'No license') {
     return "";
   } else {
     return `
@@ -125,7 +125,15 @@ function renderLicenseSection(license) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+function renderTocLicenseEntry(license) {
+  if (license === 'No license') {
+    return "";
+  } else {
+    return `* [License](#License)`;
+  }
+}
+
+// Function to generate markdown for README
 const generateMD = (answers) => `
 # ${answers.title}
 
@@ -143,7 +151,7 @@ ${answers.description}
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Questions](#Questions)
-* [License](#License)
+${renderTocLicenseEntry(answers.license)}
 * [Contributing](#Contributing)
 * [Tests](#Tests)
 
@@ -167,15 +175,13 @@ Please email me at the email address listed below with any questions about this 
 
 Follow this link to see some of my other projects.
 
-[Repository Owner GitHub Profile](https://github.com/${answers.username})
+[GitHub Profile](https://github.com/${answers.username})
 
 * [Return to Top](#${answers.title})
 
 ##
 
 ${renderLicenseSection(answers.license)}
-
-* [Return to Top](#${answers.title})
 
 ## Contributing
 
@@ -190,7 +196,7 @@ ${answers.tests}
 * [Return to Top](#${answers.title})
 `;
 
-// TODO: Create a function to write README file
+// Function to write README file
 const init = async () => {
   console.log('Hello. Answer the following questions to generate a README file.');
   try {

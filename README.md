@@ -1,7 +1,7 @@
 
 # fdsa
 
-
+[![GitHub license](https://img.shields.io/badge/license-BSD_2_Clause-brightgreen)](https://img.shields.io/badge/license-BSD_2_Clause-brightgreen)
 
 ## Description 
 
@@ -39,15 +39,17 @@ Please email me at the email address listed below with any questions about this 
 
 Follow this link to see some of my other projects.
 
-[Repository Owner GitHub Profile](https://github.com/fdsa)
+[GitHub Profile](https://github.com/fdsa)
 
 * [Return to Top](#fdsa)
 
 ##
 
 
-
-* [Return to Top](#fdsa)
+  ## License
+    
+  This software has been created under the [BSD 2-Clause](https://choosealicense.com/licenses/bsd-2-clause) license.
+  
 
 ## Contributing
 
