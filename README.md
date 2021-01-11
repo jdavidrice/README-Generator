@@ -1,66 +1,78 @@
-
-# fdsa
-
-[![GitHub license](https://img.shields.io/badge/license-BSD_2_Clause-brightgreen)](https://img.shields.io/badge/license-BSD_2_Clause-brightgreen)
-
+# README-Generator 
+[![GitHub license](https://img.shields.io/github/license/jdavidrice/README-Generator)](https://github.com/jdavidrice/README-Generator/blob/master/LICENSE)
 ## Description 
 
-fdsa 
+This README generator is a command-line Node.js application that dynamically generates a professional README file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-[Link to published website](fdsa)
+[Link to published website](https://jdavidrice.github.io/README-Generator/)
 
 ## Table of Contents
 
 * [Description](#Description)
+* [Table of Contents](#Table-of-Contents)
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Questions](#Questions)
 * [License](#License)
 * [Contributing](#Contributing)
 * [Tests](#Tests)
+* [Questions](#Questions)
 
 ## Installation
 
-fdsa
+To use this app, you need to install Node.js, NPM, and Inquirer.
 
-* [Return to Top](#Description)
+* [Return to Top](#README-Generator)
 
 ## Usage 
 
-fdsa
+After installing the required dependencies, enter "node index.js" into the console. Answer the questions, and the app will automatically generate a README file. 
 
-* [Return to Top](#Description)
+* [Return to Top](#README-Generator)
 
 ## Questions
 
-Please email me at the email address listed below with any questions about this app. 
+Please contact me at the email address listed below with any questions about this app. 
 
-[fdsa](mailto:fdsa)
+[jdavidrice@gmail.com](mailto:jdavidrice@gmail.com)
 
-Follow this link to see some of my other projects.
+[Repository Owner GitHub Profile](https://github.com/jdavidrice)
 
-[GitHub Profile](https://github.com/fdsa)
+* [Return to Top](#README-Generator)
 
-* [Return to Top](#Description)
+## License
 
-##
+MIT License
 
+Copyright (c) 2021 Jeremy Rice
 
-  ## License
-    
-  This software has been created under the [BSD 2-Clause](https://choosealicense.com/licenses/bsd-2-clause) license.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-  * [Return to Top](#Description)
-  
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+* [Return to Top](#README-Generator)
 
 ## Contributing
 
-  fdsa
+  Jeremy Rice
 
-* [Return to Top](#Description)
+* [Return to Top](#README-Generator)
 
 ## Tests
 
-fdsa
+No tests
 
-* [Return to Top](#Description)
+* [Return to Top](#README-Generator)

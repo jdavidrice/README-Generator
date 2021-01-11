@@ -60,7 +60,21 @@ const promptUser = () => {
     },
   ]);
 };
+// Function to write README file
+const init = async () => {
+  console.log('Hello. Answer the following questions to generate a README file.');
+  try {
+    const answers = await promptUser();
 
+    const md = generateMD(answers);
+
+    await writeFileAsync('README.md', md);
+
+    console.log('Successfully wrote to README.md');
+  } catch (err) {
+    console.log(err);
+  }
+};
 // Function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
@@ -85,7 +99,6 @@ function renderLicenseBadge(license) {
       break;
   }
 }
-
 // Function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
@@ -110,7 +123,6 @@ function renderLicenseLink(license) {
       break;
   }
 }
-
 // Function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
@@ -126,7 +138,8 @@ function renderLicenseSection(license) {
   `;
   }
 }
-
+// Function that renders an entry in the TOC for the License section, if it was created
+// If there is no license, the entry is not rendered
 function renderTocLicenseEntry(license) {
   if (license === 'No license') {
     return "";
@@ -134,7 +147,6 @@ function renderTocLicenseEntry(license) {
     return `* [License](#License)`;
   }
 }
-
 // Function to generate markdown for README
 const generateMD = (answers) => `
 # ${answers.title}
@@ -197,22 +209,6 @@ ${answers.tests}
 
 * [Return to Top](#Description)
 `;
-
-// Function to write README file
-const init = async () => {
-  console.log('Hello. Answer the following questions to generate a README file.');
-  try {
-    const answers = await promptUser();
-
-    const md = generateMD(answers);
-
-    await writeFileAsync('README.md', md);
-
-    console.log('Successfully wrote to README.md');
-  } catch (err) {
-    console.log(err);
-  }
-};
 
 module.exports = generateMD;
 
