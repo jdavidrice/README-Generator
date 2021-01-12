@@ -4,7 +4,9 @@
 
 This README generator is a command-line Node.js application that dynamically generates a professional README file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-[Link to published website](https://jdavidrice.github.io/README-Generator/)
+Walkthrough Video
+
+<iframe src="https://drive.google.com/file/d/1ckqmNw_jXqsfP2GgDb8lv5rJ2Sq1aI-M/preview" width="640" height="480"></iframe>
 
 ## Table of Contents
 
