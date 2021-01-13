@@ -27,6 +27,6 @@
 //   })
 // })
 
-describe("renderLicenseBadge", () => {
-  const license = "MIT";
-})
+// describe("renderLicenseBadge", () => {
+//   const license = "MIT";
+// })
