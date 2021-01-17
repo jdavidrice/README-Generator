@@ -9,7 +9,6 @@ This README generator is a command-line Node.js application that dynamically gen
 ## Table of Contents
 
 * [Description](#Description)
-* [Table of Contents](#Table-of-Contents)
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [License](#License)
