@@ -8,24 +8,24 @@ This README generator is a command-line Node.js application that dynamically gen
 
 ## Table of Contents
 
-* [Description](#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [License](#License)
-* [Contributing](#Contributing)
-* [Tests](#Tests)
-* [Questions](#Questions)
+*   [Description](#Description)
+*   [Installation](#Installation)
+*   [Usage](#Usage)
+*   [License](#License)
+*   [Contributing](#Contributing)
+*   [Tests](#Tests)
+*   [Questions](#Questions)
 
 ## Installation
 
-1. Fork this repository and download it to your computer.
-2. Install [Node.js](https://nodejs.org/en/download/) for your operating system. 
-3. Install the Node Project Manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-4. Install the [Inquirer package](https://www.npmjs.com/package/inquirer) by using the following command:
+1.  Fork this repository and download it to your computer.
+2.  Install [Node.js](https://nodejs.org/en/download/) for your operating system. 
+3.  Install the Node Project Manager [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+4.  Install the [Inquirer package](https://www.npmjs.com/package/inquirer) by using the following command:
 ```
 npm i inquirer
 ```
-* [Return to Top](#README-Generator)
+*   [Return to Top](#README-Generator)
 
 ## Usage 
 
@@ -35,7 +35,7 @@ node index.js
 ```
 2. Answer the question prompts as completely as possible. When done, you will have README file that you can use for your project.  
 
-* [Return to Top](#README-Generator)
+*   [Return to Top](#README-Generator)
 
 ## Questions
 
@@ -45,7 +45,7 @@ Please contact me at the email address listed below with any questions about thi
 
 [Repository Owner GitHub Profile](https://github.com/jdavidrice)
 
-* [Return to Top](#README-Generator)
+*   [Return to Top](#README-Generator)
 
 ## License
 
@@ -71,16 +71,16 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-* [Return to Top](#README-Generator)
+*   [Return to Top](#README-Generator)
 
 ## Contributing
 
   Jeremy Rice
 
-* [Return to Top](#README-Generator)
+*   [Return to Top](#README-Generator)
 
 ## Tests
 
 No tests
 
-* [Return to Top](#README-Generator)
+*   [Return to Top](#README-Generator)
