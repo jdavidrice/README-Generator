@@ -131,12 +131,11 @@ function renderTocLicenseEntry(license) {
   if (license === "No license") {
     return "";
   } else {
-    return `* [License](#License)`;
+    return `*   [License](#License)`;
   }
 }
 // Function to generate markdown for README
-const generateMD = (answers) => `
-# ${answers.title}
+const generateMD = (answers) => `# ${answers.title}
 
 ${renderLicenseBadge(answers.license)}
 
@@ -148,13 +147,13 @@ ${answers.description}
 
 ## Table of Contents
 
-* [Description](#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Questions](#Questions)
+*   [Description](#Description)
+*   [Installation](#Installation)
+*   [Usage](#Usage)
+*   [Questions](#Questions)
 ${renderTocLicenseEntry(answers.license)}
-* [Contributing](#Contributing)
-* [Tests](#Tests)
+*   [Contributing](#Contributing)
+*   [Tests](#Tests)
 
 ## Installation
 
@@ -178,13 +177,13 @@ ${renderLicenseSection(answers.license)}
 
 ## Contributing
 
-  ${answers.contributing}
+${answers.contributing}
 
 ## Tests
 
 ${answers.tests}
 
-* [Return to Top](#Description)
+*   [Return to Top](#Description)
 `;
 
 module.exports = generateMD;
